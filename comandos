@@ -5,3 +5,5 @@ touch d | grep -A6 "EDIFICIO D" file1 | grep -v "*" > d
 touch s
 
 grep "TOTAL" totales.txt > file2 | grep -w "L" consumos.txt >> file2 | grep -v "TOTAL" totales.txt >> file2
+
+cat file2 | grep -v "200"
