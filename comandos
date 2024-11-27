@@ -3,3 +3,5 @@ cat file1 | grep -A24 -B1 "SEMANAS" consumos.txt > file1
 touch a | grep -A6 "EDIFICIO A" file1 | grep -v "*" > a
 touch d | grep -A6 "EDIFICIO D" file1 | grep -v "*" > d
 touch s
+
+grep "TOTAL" totales.txt > file2 | grep -w "L" consumos.txt >> file2 | grep -v "TOTAL" totales.txt >> file2
