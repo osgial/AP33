@@ -1,0 +1,1 @@
+cat file1 | grep -A23 -B1 "SEMANAS" consumos.txt > file1
